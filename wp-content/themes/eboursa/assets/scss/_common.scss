@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: -webkit-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    color: $c-default-black;
+    font: 14px $font-base;
+    line-height: 23px;
+    background: #fff;
+
+    &.logged-in {
+        &.admin-bar {
+            .modal {
+                padding-top: 46px !important;
+            }
+
+            @media screen and (min-width: 783.9px) {
+                .modal {
+                    padding-top: 32px !important;
+                }
+            }
+        }
+    }
+}
+
+.content-area {
+    flex: 1 1 auto;
+}
+
+.page-wrapper {
+    min-height: calc(100vh - 606px);
+    
+    &.subscribe-page{
+        min-height: calc(100vh - 147px);
+        display: flex;
+        align-items: center;
+    }
+}
+
+.container-fluid {
+    @media screen and (min-width: 1200px) {
+        max-width: 1108px;
+    }
+}
+
+.mobile-hidden {
+    @media screen and (max-width: 543.9px) {
+        display: none;
+    }
+}
+
+.desktop-hidden {
+    display: none;
+    font-size: 0;
+    @media screen and (max-width: 543.9px) {
+        display: block;
+    }
+}
+
+.w-1152 {
+    & > .vce-row-content {
+        @media screen and (min-width: 992px) {
+            max-width: 1152px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.w-920 {
+    & > .vce-row-content {
+        @media screen and (min-width: 992px) {
+            max-width: 920px;
+            min-width: 920px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.group {
+
+    &-flex {
+        display: flex;
+        align-items: center;
+    }
+
+    &-right {
+        justify-content: flex-end;
+    }
+
+    &-wrapper {
+        display: flex;
+        @media screen and (max-width: 575.9px) {
+            margin-bottom: 15px;
+            justify-content: space-between;
+        }
+    }
+
+    &-end-md {
+        @media screen and (max-width: 991.9px) and (min-width: 576px) {
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+    }
+
+    &-left-xs {
+        @media screen and (max-width: 575.9px) {
+            justify-content: start;
+        }
+    }
+
+    &-column-xs {
+        @media screen and (max-width: 575.9px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
+
+
+.translatepress-ar {
+    .group-flex {
+        &:not(.group-end-md) {
+            flex-direction: row-reverse;
+
+            &.justify-content-end {
+                justify-content: flex-start !important;
+            }
+        }
+    }
+}
+
+.content-md-wrapper {
+    max-width: 730px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner-page {
+    .content-area {
+        padding-top: 56px;
+    }
+
+    .footer-form {
+        margin-top: 0;
+    }
+
+    @media screen and (max-width: 767.9px) {
+        .content-area {
+            padding-top: 25px;
+        }
+    }
+}
+
+ol {
+    &.ol-brand-list {
+        li {
+            font-weight: 500;
+            font-size: 1.125rem;
+            margin-bottom: 32px;
+            line-height: 1.2;
+
+            ol {
+                padding-left: 20px;
+
+                li {
+                    font-size: 14px;
+                    font-weight: normal;
+                    margin-bottom: 16px;
+                    line-height: 23px;
+
+                    &:first-child {
+                        margin-top: 16px;
+                    }
+                }
+            }
+
+            p {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 23px;
+
+                &:first-child {
+                    margin-top: 16px;
+                }
+            }
+        }
+
+        @media screen and (max-width: 767.9px) {
+            li {
+                ol {
+                    li {
+                        &:first-child {
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.error404 {
+    .content-area {
+        padding: 50px 0 120px;
+    }
+}

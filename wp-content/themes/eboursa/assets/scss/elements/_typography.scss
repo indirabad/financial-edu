@@ -1,0 +1,75 @@
+.text-upper{
+	text-transform: uppercase;
+}
+
+h1{
+	font-size: 48px;
+	line-height: 56px;
+	margin-bottom: 15px;
+	font-weight: bold;
+	
+	@media screen and (max-width: 767.9px){
+		font-size: 20px;
+		line-height: 23px;
+		margin-bottom: 10px;
+	}
+}
+
+h2{
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 15px;
+	
+	@media screen and (max-width: 767.9px){
+		font-size: 18px;
+		line-height: 21px;
+	}
+}	
+
+h6{
+	font-size: 18px;
+	line-height: 21px;
+	margin-bottom: 0;
+}
+
+.text-lg{
+	p{
+		line-height: 24px;
+		letter-spacing: -0.078px;
+		font: 1.25rem $font-input;
+		
+		@media screen and (max-width: 767.9px){
+			font-size: 0.875rem;
+			line-height: 20px;
+		}
+	}	
+}
+
+.text-md{
+	p{
+		font-size: 1.25rem;
+		line-height: 24px;
+		letter-spacing: -0.078px;
+		
+		@media screen and (max-width: 767.9px){
+			font-size: 0.875rem;
+			line-height: 20px;
+		}
+	}	
+}
+
+.text-center-sm{
+	@media screen and (max-width: 767.9px){
+		text-align: center;
+	}	
+}
+
+/* arabic page */
+
+.translatepress-ar{
+	.text-right-md-ar{
+		@media screen and (min-width: 768px){
+			text-align: right;
+		}	
+	}
+}
